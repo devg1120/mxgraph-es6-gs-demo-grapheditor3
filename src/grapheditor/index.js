@@ -137,6 +137,4 @@ var mxLoadResources = false;
 })();
     var global_a = "GGGGG"; // 『var』を抜いて定義します。
  
-console.log(global_a); 
-console.log(window["global_a"]); 
 
