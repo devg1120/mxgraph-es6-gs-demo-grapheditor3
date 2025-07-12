@@ -560,6 +560,7 @@ Editor.prototype.setGraphXml = function (node) {
     console.log(dec);
     if (node.nodeName == "mxGraphModel") {
       this.graph.model.beginUpdate();
+      console.log("setGraphXml step 1");
 
       try {
         this.graph.model.clear();
@@ -571,6 +572,7 @@ Editor.prototype.setGraphXml = function (node) {
         this.graph.model.endUpdate();
       }
 
+      console.log("setGraphXml step 2");
       this.fireEvent(new m.mxEventObject("resetGraphView"));
     } else if (node.nodeName == "root") {
       this.resetGraph();

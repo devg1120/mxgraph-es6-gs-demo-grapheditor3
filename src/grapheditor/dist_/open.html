@@ -9,7 +9,6 @@
 	// Reads files locally
 	function handleFiles(files)
 	{
-					console.log("open: handleFiles");
 		for (var i = 0; i < files.length; i++)
 		{
 			(function(file)
@@ -37,7 +36,6 @@
 	// Handles form-submit by preparing to process response
 	function handleSubmit()
 	{
-					console.log("open: hundleSubmit");
 		var form = window.openForm || document.getElementById('openForm');
 		
 		// Checks for support of the File API for local file access
@@ -46,7 +44,6 @@
 		{
 			handleFiles(form.upfile.files);
 			
-					console.log("open: false 1");
 			return false;
 		}
 		else
@@ -57,11 +54,9 @@
 				// Small hack to support import
 				if (window.parent.openNew)
 				{
-					console.log("open:",window.parent.location.href);
 					window.parent.open(window.parent.location.href);
 				}
 				
-					console.log("open: true");
 				// NOTE: File is loaded via JS injection into the iframe, which in turn sets the
 				// file contents in the parent window. The new window asks its opener if any file
 				// contents are available or waits for the contents to become available.
@@ -70,7 +65,6 @@
 			else
 			{
 				window.parent.mxUtils.alert(window.parent.mxResources.get('invalidOrMissingFile'));
-					console.log("open: false 2");
 				
 				return false;
 			}
@@ -189,7 +183,6 @@
 		}
 		else
 		{
-				console.log("open: no use LocalStorage", window.parent.OPEN_URL);
 			var editLink = document.getElementById('editLink');
 			var openButton = document.getElementById('openButton');
 			openButton.value = window.parent.mxResources.get(window.parent.openKey || 'open');
