@@ -1,0 +1,88 @@
+.-split-container {
+    position: relative;
+    padding: 0px !important;
+    margin: 0px;
+    border: 0px;
+    background-color: #fafafa;
+    overflow: hidden;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+.-split-container-horizontal {
+    flex-direction: row;
+}
+.-split-container-vertical {
+    flex-direction: column;
+}
+.-split-panel {
+    position: relative;
+    box-sizing: border-box !important;
+    overflow: hidden;
+    flex-shrink: 0 !important;
+    margin: 0px !important;
+}
+.-split-container-horizontal > .-split-panel {
+    height: 100% !important;
+    margin-left: 7px !important;
+}
+.-split-container-horizontal > .-split-panel[d-split-panel="0"] {
+    margin-left: 0px !important;
+}
+.-split-container-vertical > .-split-panel {
+    width: 100% !important;
+    margin-top: 7px !important;
+}
+.-split-container-vertical > .-split-panel[d-split-panel="0"] {
+    margin-top: 0px !important;
+}
+.-split-bar {
+    position: absolute;
+    background-color: #f0f0f0;
+    background-clip: content-box;
+    box-sizing: border-box;
+}
+.-split-bar:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.-split-bar:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.-split-bar:after {
+    content: " ";
+    background: linear-gradient(45deg,#eee 50%,#fff 0);
+    background-size: 3px 3px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.-split-container-horizontal > .-split-bar {
+    height: 100%;
+    width: 7px;
+    margin-left: -7px;
+    cursor: e-resize;
+}
+.-split-container-horizontal > .-split-bar:after {
+    top: 50%;
+    margin-top: -13px;
+    height: 26px;
+    width: 7px;
+}
+.-split-container-vertical > .-split-bar {
+    width: 100%;
+    height: 7px;
+    margin-top: -7px;
+    cursor: n-resize;
+}
+.-split-container-vertical > .-split-bar:after {
+    left: 50%;
+    margin-left: -13px;
+    height: 7px;
+    width: 26px;
+}

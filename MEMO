@@ -1,0 +1,46 @@
+@mxgraph  alias 導入
+
+./mxgraph-es6-gs 同期開発環境
+
+
+
+npx vite -v
+vite/5.4.19 linux-x64 node-v20.11.1
+
+
+--depend--
+   local mxgraph-es6-gs
+
+
+--vite--
+export default  {
+  root: 'src/grapheditor'
+}
+
+import { resolve } from 'path'
+
+
+export default defineConfig({
+  resolve: {
+    alias: {
+      '@mxgraph': resolve(__dirname, './mxgraph-es6-gs/src')       
+    }
+  },
+})
+
+
+
+-----------------------------  dev
+npm run dev
+
+open http://127.0.0.1:3000
+
+----------------------------- prod
+npm run build
+
+cd src/grapheditor
+./_dist_set.sh
+./_start_httpd.sh
+
+open http://127.0.0.1:3000
+

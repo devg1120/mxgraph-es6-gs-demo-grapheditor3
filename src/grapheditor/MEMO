@@ -1,0 +1,9 @@
+ pnpm i
+ npm run build
+
+cd src/grapheditor
+./_dist_set.sh
+./_start_httpd.sh
+
+open http://127.0.0.1:3000
+

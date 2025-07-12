@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>split.panel.js DEMO</title>
+<link rel="stylesheet" href="../dist/splitpanel.default.css" />
+<script type="text/javascript" src="../dist/splitpanel.js"></script>
+<style>
+#stage {
+    padding: 10px;
+    color: black;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tip {
+    background-color: #fff8dc;
+    font-size: 10px;
+}
+#container1 {
+    height: 480px;
+    width: 640px;
+    border: 1px solid #ccc;
+}
+#container1.-split-container {
+    background-color: #fff8dc;
+}
+#container2.-split-container {
+    background-color: #f0f8ff;
+}
+#panel3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.swap-caption {
+    background: linear-gradient(to top, #ddd 3%, #f0f0f0 46%, #f2f2f2 100%);
+    height: 26px;
+    min-height: 26px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+    <div id="stage">
+        <h1>DEMO for split.panel.js</h1>
+        <p class="tip">Drag the split bar to resize the panel, double click the split bar to swap the size of the panel.</p>
+        <p class="tip">The background color of the left zone is light yellow, and the right is light blue by customizing the styles</p>
+        <div id="container1">
+            <div style="width:170px;">
+                <p>The 1st panel.</p>
+                <p>The minum size of the right zone is 100px.</p>
+            </div>
+            <div id="container2" style="width:170px; min-width: 100px;">
+                <div>
+                    <p>The 2nd panel</p>
+                </div>
+                <div id="panel3" style="min-height: 26px; height: 100px;">
+                    <div class="swap-caption" onselectstart="return false">dblclick to swap manually</div>
+                    <p>The 3rd panel (minum size is 26px)</p>
+                </div>
+                <div d-split-noautoswap="true">
+                    <p>The 4th panel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        console.log("### split.panel.js", SplitPanel.$version, SplitPanel.$stamp);
+        SplitPanel.init(document.getElementById("container1"));
+        SplitPanel.init(document.getElementById("container2"), "vertical");
+        const caption = document.querySelector("#panel3>.swap-caption");
+        caption && caption.addEventListener("dblclick", () => SplitPanel.swap(caption));
+    </script>
+</body>
+</html>

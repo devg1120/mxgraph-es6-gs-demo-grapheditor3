@@ -1,0 +1,149 @@
+
+# npm run buld
+
+# cp -r public/ dist/
+# mkdir dist/js
+# cp js/Init.js dist/js/
+# cp -r resources/ dist/
+# cp -r resources/ dist/
+# cp -r styles/ dist/
+# cp -r stencils/ dist/
+
+
+# tree dist
+dist/
+├── assets
+│   ├── index-BPffL89D.css
+│   ├── index-Dd8Uy0Sf.js
+│   └── sprites-CGeinikd.png
+├── css
+│   ├── common.css
+│   └── explorer.css
+├── images
+│   ├── button.gif
+│   ├── close.gif
+│   ├── collapsed.gif
+│   ├── dark-mode-svgrepo-com.svg
+│   ├── error.gif
+│   ├── expanded.gif
+│   ├── light-mode-svgrepo-com.svg
+│   ├── maximize.gif
+│   ├── minimize.gif
+│   ├── normalize.gif
+│   ├── point.gif
+│   ├── resize.gif
+│   ├── separator.gif
+│   ├── submenu.gif
+│   ├── transparent.gif
+│   ├── warning.gif
+│   ├── warning.png
+│   ├── window.gif
+│   └── window-title.gif
+├── index.html
+├── js
+│   └── Init.js
+├── public
+│   ├── css
+│   │   ├── common.css
+│   │   └── explorer.css
+│   ├── images
+│   │   ├── button.gif
+│   │   ├── close.gif
+│   │   ├── collapsed.gif
+│   │   ├── dark-mode-svgrepo-com.svg
+│   │   ├── error.gif
+│   │   ├── expanded.gif
+│   │   ├── light-mode-svgrepo-com.svg
+│   │   ├── maximize.gif
+│   │   ├── minimize.gif
+│   │   ├── normalize.gif
+│   │   ├── point.gif
+│   │   ├── resize.gif
+│   │   ├── separator.gif
+│   │   ├── submenu.gif
+│   │   ├── transparent.gif
+│   │   ├── warning.gif
+│   │   ├── warning.png
+│   │   ├── window.gif
+│   │   └── window-title.gif
+│   └── resources
+│       ├── editor_de.txt
+│       ├── editor_ja.txt
+│       ├── editor.txt
+│       ├── editor_zh.txt
+│       ├── graph_de.txt
+│       ├── graph_ja.txt
+│       ├── graph.txt
+│       └── graph_zh.txt
+├── resources
+│   ├── editor_de.txt
+│   ├── editor_ja.txt
+│   ├── editor.txt
+│   ├── editor_zh.txt
+│   ├── graph_de.txt
+│   ├── grapheditor_de.txt
+│   ├── grapheditor_se.txt
+│   ├── grapheditor.txt
+│   ├── graph_ja.txt
+│   ├── graph.txt
+│   ├── graph_zh.txt
+│   ├── help_de.html
+│   ├── help.html
+│   └── help_se.html
+├── stencils
+│   ├── arrows.xml
+│   ├── basic.xml
+│   ├── bpmn.xml
+│   ├── clipart
+│   │   ├── Credit_Card_128x128.png
+│   │   ├── Database_128x128.png
+│   │   ├── Doctor1_128x128.png
+│   │   ├── Earth_globe_128x128.png
+│   │   ├── Email_128x128.png
+│   │   ├── Empty_Folder_128x128.png
+│   │   ├── Firewall_02_128x128.png
+│   │   ├── Full_Folder_128x128.png
+│   │   ├── Gear_128x128.png
+│   │   ├── Graph_128x128.png
+│   │   ├── iMac_128x128.png
+│   │   ├── iPad_128x128.png
+│   │   ├── Laptop_128x128.png
+│   │   ├── Lock_128x128.png
+│   │   ├── MacBook_128x128.png
+│   │   ├── Monitor_Tower_128x128.png
+│   │   ├── Piggy_Bank_128x128.png
+│   │   ├── Pilot1_128x128.png
+│   │   ├── Printer_128x128.png
+│   │   ├── Router_Icon_128x128.png
+│   │   ├── Safe_128x128.png
+│   │   ├── Security1_128x128.png
+│   │   ├── Server_Tower_128x128.png
+│   │   ├── Shopping_Cart_128x128.png
+│   │   ├── Software_128x128.png
+│   │   ├── Soldier1_128x128.png
+│   │   ├── Suit1_128x128.png
+│   │   ├── Suit2_128x128.png
+│   │   ├── Suit3_128x128.png
+│   │   ├── Tech1_128x128.png
+│   │   ├── Telesales1_128x128.png
+│   │   ├── Virtual_Machine_128x128.png
+│   │   ├── Virus_128x128.png
+│   │   ├── Wireless_Router_N_128x128.png
+│   │   ├── Worker1_128x128.png
+│   │   └── Workstation_128x128.png
+│   └── flowchart.xml
+└── styles
+    ├── default.xml
+    ├── down.gif
+    ├── grapheditor_black1.css
+    ├── grapheditor_black2.css
+    ├── grapheditor.css
+    ├── grapheditor.css.org
+    ├── grapheditor-ie6.css
+    ├── help.css
+    ├── sprites.png
+    ├── thumb_horz.png
+    ├── thumb_vertical.png
+    └── up.gif
+
+13 directories, 121 files
