@@ -10,9 +10,5 @@
   },
   "devDependencies": {
     "vite": "^5.0.2"
-  },
-  "dependencies": {
-    "mxgraph-es6-gs": "https://github.com/devg1120/mxgraph-es6-gs"
   }
-
 }

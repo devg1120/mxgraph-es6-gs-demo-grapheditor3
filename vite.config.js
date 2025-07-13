@@ -11,7 +11,8 @@ export default defineConfig({
   root: 'src/grapheditor',
   resolve: {
     alias: {
-      '@mxgraph': resolve(__dirname, './mxgraph-es6-gs/src')
+      '@mxgraph': resolve(__dirname, './mxgraph-es6-gs/src')    // local
+      //'@mxgraph':  'mxgraph-es6-gs'                               // git node_modules
     }
   },
 })
