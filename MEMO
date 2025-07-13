@@ -2,10 +2,19 @@
 
 ./mxgraph-es6-gs 同期開発環境
 
+--vite
+
+xport default defineConfig({
+  root: 'src/grapheditor',
+  resolve: {
+    alias: {
+      '@mxgraph': resolve(__dirname, './mxgraph-es6-gs/src')    // local-pkg
+      //'@mxgraph':  'mxgraph-es6-gs'                               // git node_modules
+    }
+  },
+})
 
 
-npx vite -v
-vite/5.4.19 linux-x64 node-v20.11.1
 
 
 --depend--
